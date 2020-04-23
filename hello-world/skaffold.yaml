@@ -4,7 +4,7 @@ metadata:
   name: hello-world
 build:
   tagPolicy:
-    dateTime: {}
+    gitCommit: {}
   artifacts:
   - image: python_demo
 deploy:
