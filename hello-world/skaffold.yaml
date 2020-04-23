@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta2
+kind: Config
+metadata:
+  name: hello-world
+build:
+  tagPolicy:
+    dateTime: {}
+  artifacts:
+  - image: python_demo
+deploy:
+  kubectl:
+    manifests:
+    - deployment.yaml
+    - service.yaml
